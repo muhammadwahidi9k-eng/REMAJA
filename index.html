@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Sejahtera - Website Resmi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-home"></i>
+                Desa Sejahtera
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Tentang Desa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#upload" class="nav-link">Upload Gambar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Desa Sejahtera</h1>
+            <p>Desa yang damai, subur, dan penuh keharmonisan</p>
+            <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Desa Sejahtera</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Desa Sejahtera adalah desa yang terletak di lereng pegunungan dengan udara sejuk dan pemandangan indah. Desa ini dikenal dengan pertanian organiknya yang menghasilkan beragam produk berkualitas tinggi.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>1.250</h3>
+                            <p>Jiwa Penduduk</p>
+                        </div>
+                        <div class="stat">
+                            <h3>350</h3>
+                            <p>KK</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500 Ha</h3>
+                            <p>Luas Lahan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop" alt="Pemandangan Desa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Galeri Foto Desa</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gambar akan dimuat dari localStorage -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload">
+        <div class="container">
+            <h2>Upload Foto Desa</h2>
+            <div class="upload-form">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Klik atau drag & drop foto desa Anda</p>
+                    <input type="file" id="imageInput" accept="image/*" multiple>
+                </div>
+                <div class="upload-preview" id="uploadPreview"></div>
+                <button class="save-btn" id="saveBtn" style="display: none;">
+                    <i class="fas fa-save"></i>
+                    Simpan ke Galeri
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Desa Sejahtera No. 1, Kecamatan Sukses, Kabupaten Makmur</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@desasejahtera.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Desa Sejahtera. Dibuat dengan ❤️ untuk masyarakat desa.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
